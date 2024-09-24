@@ -13,20 +13,20 @@ form.addEventListener(`submit`, (event: Event) => {
     const Skills = (document.getElementById('skills') as HTMLInputElement). value
 
     const resumeHTML = `
-    <h2><b>resume</b></h2>
+    <h2><b>editable Resume</b></h2>
     <h3>Personal information</h3>
-    <p><b>Name:</b>${name}</p>
-    <p><b>Email:</b>${Email}</p>
-    <p><b>Phone:</b>${Phone}</p>
+    <p><b>Name:</b><span contenteditable="true">${name}</span></p>
+    <p><b>Email:</b><span contenteditable="true">${Email}</span></p>
+    <p><b>Phone:</b><span contenteditable="true">${Phone}</span></p>
     
     <h3>Education</h3>
-    <p>${Education}</p>
+    <p contenteditable="true">${Education}</p>
     
     <h3>Experience</h3>
-    <p>${Experience}</p>
+    <p contenteditable="true">${Experience}</p>
     
     <h3>Skills/h3>
-    <p>${Skills}</p>
+    <p contenteditable="true">${Skills}</p>
     `
     if(resumedisplayelement){
         resumedisplayelement.innerHTML = resumeHTML
